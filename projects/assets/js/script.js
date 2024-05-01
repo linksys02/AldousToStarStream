@@ -67,7 +67,7 @@ function startTimer() {
         }   
       
         // If executed then Share is done
-        if (totalSeconds >= 7 && (identifier === 'share')) {
+        if (totalSeconds >= 5 && (identifier === 'share')) {
             clearInterval(timerInterval);
           
             shareButtonA.style.backgroundColor = 'green';
@@ -109,7 +109,7 @@ function startTimer() {
 
             progressBtn.textContent = 'Unlock Progress 3/4';      
 
-            tellerText.innerHTML = 'Do: Watch Video <br> Watch Time Needed: 05 : 00  Minutes<br>(Do Watch the Video Straight or it will restart)';
+            tellerText.innerHTML = 'Do: Watch Video <br> Watch Time Needed: 10 : 00  Minutes<br>(Do Watch the Video Straight or it will restart)';
 
             //enabling the next Task
             //must disabled
@@ -122,7 +122,7 @@ function startTimer() {
 
         // If executed then Youtube Watch is done LASTLY
         // Depends on how much time the video is
-        if (minutes >= 5 && (identifier === 'watch')) {
+        if (minutes >= 9 && (identifier === 'watch')) {
             clearInterval(timerInterval);
           
             watchButtonA.style.backgroundColor = 'green';
